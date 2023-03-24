@@ -1,3 +1,3 @@
-Fauna brasileira
+Bloco de notas 
 
-Sistema para catalogar animais distribuídos por todo o território brasileiro, divididos por espécie entre mamíferos, aves, répteis, anfíbios e peixes, com cadastro de imagens e descrição sobre cada animal e informações básicas como em que região do Brasil eles são encontrados, quais delas são espécies endêmicas e mais.
+Sistema que possui um bloco de notas tradicional, porém com mais detalhes, como por exemplo, uma aba para algumas músicas e fotos/videos. De forma geral um sistema personalizável pelo usuário, que permita que ele adicione e exclua os arquivos de mídia, modifique suas notas como achar melhor e também sendo possível adicionar "lembretes". Se possível também um aba com um ou dois jogos interativos; como exemplo jogo da memória e sudoku.
