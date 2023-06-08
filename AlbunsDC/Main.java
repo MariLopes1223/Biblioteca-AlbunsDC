@@ -1,74 +1,56 @@
 package AlbunsDC;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
-    public static void main (String [] args){
-        ArrayList <Album> ListaAlbum = AlbumRegistro.registrarAlbuns();
+    public static void main (String [] args){ 
+       ArrayList <Album> ListaAlbum = AlbumRegistro.registrarAlbuns(); //Pega a lista de albuns a partir do arquivo "AlbumRegistro"
 
-        for (Album album : ListaAlbum) {
-            System.out.println("Nome: " + album.nome);
-            System.out.println("Faixa title: " + album.faixaTitle);
-            System.out.println("O álbum possui " + album.minutos + " minutos e " + album.segundos + " segundos.");
-            System.out.println("Quantidade de músicas: " + album.quantMusicas);
-            System.out.println("Mês e ano de lançamento: " + album.MesAnoLancamento);
-        
-            switch(album.getClass().getSimpleName()){
-                case "FullAlbum": 
-                System.out.println("Tipo: Full Album");
-                break;
+        Scanner scan = new Scanner(System.in);
 
-                case "MiniAlbum":
-                System.out.println("Tipo: Mini Album");
-                break;
+        System.out.print("Bem-vindo(a) a biblioteca de albuns do Dreamcatcher. Faça seu cadastro para poder ter acesso. Clique em qualquer tecla para continuar.");
+        scan.nextLine();
 
-                case "Single":
-                System.out.println("Tipo: Single");
-                break;
-            }
+        //pegando as informações do usuário e fazendo o cadastro
+        Usuario user = new Usuario();
+        System.out.print("Informe seu nome: ");
+        user.setNome(scan.nextLine());
+        System.out.print("Informe sua bias no grupo: ");
+        user.setBias(scan.nextLine());
+        System.out.print("Sua title favorita: ");
+        user.setTitleFav(scan.nextLine());
+        System.out.print("Sua bside favorita: ");
+        user.setBsideFav(scan.nextLine());
+        System.out.print("Seu album preferido: ");
+        user.setAlbumFav(scan.nextLine());
 
-            System.out.println("\n");
+        System.out.println("\n");
 
-            System.out.println("As músicas do álbum são: ");
+        while (true){
 
-        ArrayList<Musica> faixas = album.faixas;
-
-        int contagem = 1;
-
-            for (Musica song: faixas){
-               System.out.println(contagem + " - " + song.nome);
-               contagem ++;
-        }
+            System.out.println("Para ver os álbuns e suas respectivas músicas digite 1, para ver apenas as músicas, digite 2. Para sair clique em qualquer tecla.");
+            String opcao = scan.next();
             
-            System.out.println("-----------------------\n\n\n\n");
-        }
-
-        
-        Album umAlbum = ListaAlbum.get(0);
-        ArrayList <Album> erasAlbums = umAlbum.AdicionaTrilogia(ListaAlbum);
-
-        System.out.println("\n\n\n\nOs álbuns pertencentes a uma era ou trilogia são:\n");
-
-        for (Album eras : erasAlbums){
-            System.out.println("Nome: " + eras.nome);
-
-            switch(eras.getClass().getSimpleName()){
-                case "FullAlbum": 
-                System.out.println("Tipo: Full Album");
-                break;
-
-                case "MiniAlbum":
-                System.out.println("Tipo: Mini Album");
-                break;
-
-                case "Single":
-                System.out.println("Tipo: Single");
-                break;
+            if (opcao.equals("1")){
+                ImprimeAlbum.ImprimirAlbuns(); //imprime todos os albuns
             }
-            System.out.println("-----------------------\n");
+            else if (opcao.equals("2")){
+                System.out.println("\n");
+                ImprimeMusica.imprimirMusica(ListaAlbum); //imprime todas as músicas
+            }
+            else break;
         }
-    }
 
+        System.out.println(user.getNome() + ", você deseja criar uma playlist? Clique 1 se sim, caso deseje encerrar o programa, clique em qualquer tecla.");
+        String playlist = scan.nextLine();
+
+            if (playlist.equals("1")){
+                Playlist favs = new Playlist();
+            }
+
+        scan.close();
+    }
 }
     
         
