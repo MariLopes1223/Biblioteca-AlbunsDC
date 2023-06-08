@@ -1,3 +1,5 @@
-Bloco de notas 
+Biblioteca de álbuns do Dreamcatcher
 
-Sistema que possui um bloco de notas tradicional, porém com mais detalhes, como por exemplo, uma aba para algumas músicas e fotos/videos. De forma geral um sistema personalizável pelo usuário, que permita que ele adicione e exclua os arquivos de mídia, modifique suas notas como achar melhor e também sendo possível adicionar "lembretes". Se possível também um aba com um ou dois jogos interativos; como exemplo jogo da memória e sudoku.
+Biblioteca com todos os álbuns (e suas respectivas músicas) do Dreamcatcher, onde cada música terá suas características. Os albuns também serão divididos em categorias (mini álbum, full album e single).
+A biblioteca terá um usuário que fará seu cadastro, e esse usuário poderá escolher seu álbum, title e b-side favorita, podendo adicionar comentários caso queira.
+Também será possível a criação de uma playlist com as músicas escolhidas pelo usuário, ele poderá nomear a mesma e saber quantos minutos ela possui.
