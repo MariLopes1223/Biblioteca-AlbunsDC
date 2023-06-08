@@ -23,6 +23,10 @@ public abstract class Album implements TrilogiaOuEra{
         this.faixas = faixas;
     }
 
+    public ArrayList <Musica> getFaixas(){
+        return this.faixas;
+    }
+
     public abstract void descricao();
 
     @Override
