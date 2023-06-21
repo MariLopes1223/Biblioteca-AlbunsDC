@@ -60,8 +60,8 @@ public class ImprimeAlbum {
         Scanner scanner = new Scanner(System.in);
         
         while (true){
-            System.out.println("Para ver quais álbuns fazem parte de uma trilogia ou era, digite 1, caso queira encerrar a visualização de albuns, clique em qualquer tecla.");
-            String opcao = scanner.next();
+            System.out.println("Digite '1' para ver quais álbuns fazem parte de uma trilogia ou era \n Caso queira encerrar a visualização de albuns, clique em qualquer tecla.");
+            String opcao = scanner.nextLine();
 
             if (opcao.equals("1")){
 
@@ -86,8 +86,20 @@ public class ImprimeAlbum {
                     }
                     System.out.println("-----------------------\n");
                 }
+                break;
             }
             else break;
         }
+    }
+
+    public static void ImprimeNomeAlbum(ArrayList <Album> ListaAlbum){
+
+        int contagem = 1;
+
+        for (Album album : ListaAlbum){
+            System.out.println(contagem + " - " + album.nome);
+            contagem ++;
+        }
+
     }
 }

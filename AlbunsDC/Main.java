@@ -29,28 +29,41 @@ public class Main {
 
         while (true){
 
-            System.out.println("Para ver os álbuns e suas respectivas músicas digite 1, para ver apenas as músicas, digite 2. Para sair clique em qualquer tecla.");
-            String opcao = scan.next();
+            int opcao = exibirMenu(scan);
             
-            if (opcao.equals("1")){
+            if (opcao == 1){
                 ImprimeAlbum.ImprimirAlbuns(); //imprime todos os albuns
             }
-            else if (opcao.equals("2")){
+            else if (opcao == 2){
                 System.out.println("\n");
                 ImprimeMusica.imprimirMusica(ListaAlbum); //imprime todas as músicas
+            }       
+            else if (opcao == 3){
+                CriarPlaylist.CriaPlaylist(user); //cria playlist
             }
-            else break;
-        }
-
-        System.out.println(user.getNome() + ", você deseja criar uma playlist? Clique 1 se sim, caso deseje encerrar o programa, clique em qualquer tecla.");
-        String playlist = scan.nextLine();
-
-            if (playlist.equals("1")){
-                Playlist favs = new Playlist();
+            else {
+                System.out.println("Programa encerrado.");
+                System.exit(0);
             }
-
-        scan.close();
     }
 }
+    private static int exibirMenu(Scanner scan) {
+
+    System.out.println("----------------------------------MENU----------------------------------");
+    System.out.println("0 - Encerrar o programa.");
+    System.out.println("1 - Imprimir todos os álbuns.");
+    System.out.println("2 - Imprimir todas as músicas.");
+    System.out.println("3 - Criar uma playlist.");
+    System.out.println("4 - Visualizar todas as playlists. \n");
+    System.out.print("Informe a opção desejada para prosseguir: ");
+    int opcao = scan.nextInt();
+    System.out.println("-----------------------\n\n");
+
+    return opcao;
+ }
+
+}
+
+
     
         

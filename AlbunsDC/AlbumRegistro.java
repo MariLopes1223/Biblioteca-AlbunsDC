@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class AlbumRegistro{
     public static ArrayList<Album> registrarAlbuns() {
 
-        Musica WTD = new Musica("Welcome To Dream", 0, 41, null, false, false);
+        Musica WTD = new Musica("Welcome To Dream", 00, 41, null, false, false);
         Musica CM = new Musica("Chase Me", 3, 10, null, true, false);
         Musica Emotion = new Musica("Emotion (소원 하나)", 3, 44, null, false, false);
         Musica CMI = new Musica("Chase Me (Inst.)", 3, 10, null, false, false);

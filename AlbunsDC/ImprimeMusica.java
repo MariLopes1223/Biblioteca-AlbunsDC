@@ -6,12 +6,8 @@ public class ImprimeMusica {
     public static void imprimirMusica (ArrayList <Album> ListaAlbum){
 
         int contagem = 1;
-        ArrayList<Musica> todasAsMusicas = new ArrayList<>();
-
-        for (Album album : ListaAlbum){
-        ArrayList <Musica> faixas = album.getFaixas();
-        todasAsMusicas.addAll(faixas);
-        }
+        
+        ArrayList<Musica> todasAsMusicas = AllSongs.TodaAsMusicas(ListaAlbum);
 
         for (Musica song : todasAsMusicas){
 
@@ -37,6 +33,17 @@ public class ImprimeMusica {
 
             contagem ++;
     
+        }
+    }
+
+    public static void ImprimeNomeMus (ArrayList <Album> ListaAlbum){
+        int contagem = 1;
+        
+        ArrayList<Musica> todasAsMusicas = AllSongs.TodaAsMusicas(ListaAlbum);
+
+        for (Musica song : todasAsMusicas){
+            System.out.println(contagem + " - " + song.nome);
+            contagem ++;  
         }
     }
 }
