@@ -26,42 +26,42 @@ public class Main {
         user.setAlbumFav(scan.nextLine());
 
         System.out.println("\n");
+        scan.nextLine();
+
+        Funcoes.limpaTela();
+
+        ArrayList <Playlist> todasPlaylists = new ArrayList<>();
 
         while (true){
 
-            int opcao = exibirMenu(scan);
+            int opcao = Funcoes.exibirMenu(scan);
             
             if (opcao == 1){
-                ImprimeAlbum.ImprimirAlbuns(); //imprime todos os albuns
+                ImprimeAlbum.ImprimirAlbuns(ListaAlbum); // imprime o nome de todos os albuns
             }
             else if (opcao == 2){
-                System.out.println("\n");
-                ImprimeMusica.imprimirMusica(ListaAlbum); //imprime todas as músicas
-            }       
+                ImprimeAlbum.ImprimirAlbuns(scan); //imprime todos os albuns
+            }
             else if (opcao == 3){
-                CriarPlaylist.CriaPlaylist(user); //cria playlist
+                System.out.println("\n");
+                ImprimeMusica.imprimirMusica(ListaAlbum, scan); //imprime todas as músicas
+            }       
+            else if (opcao == 4){
+                todasPlaylists.add(CriarPlaylist.CriaPlaylist(user, scan)); //cria playlist
+            }
+            else if (opcao == 5){
+                ImprimirPlaylist.imprimePlaylist(todasPlaylists); //imprime o nome e a duração de todas as playlists
+            }
+            else if (opcao == 6){
+                TocaIntro.TocarIntro(ListaAlbum, scan);
             }
             else {
                 System.out.println("Programa encerrado.");
                 System.exit(0);
             }
     }
+
 }
-    private static int exibirMenu(Scanner scan) {
-
-    System.out.println("----------------------------------MENU----------------------------------");
-    System.out.println("0 - Encerrar o programa.");
-    System.out.println("1 - Imprimir todos os álbuns.");
-    System.out.println("2 - Imprimir todas as músicas.");
-    System.out.println("3 - Criar uma playlist.");
-    System.out.println("4 - Visualizar todas as playlists. \n");
-    System.out.print("Informe a opção desejada para prosseguir: ");
-    int opcao = scan.nextInt();
-    System.out.println("-----------------------\n\n");
-
-    return opcao;
- }
-
 }
 
 

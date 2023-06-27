@@ -10,9 +10,9 @@ public abstract class Album implements TrilogiaOuEra{
     protected int quantMusicas;
     protected String MesAnoLancamento;
     protected boolean trilogia;
-    protected ArrayList<Musica> faixas;
+    protected ArrayList<MusicasAutorais> faixas;
 
-    public Album (String nome, String faixaTitle, int minutos, int segundos, int quantMusicas, String MesAnoLancamento, boolean trilogia, ArrayList <Musica> faixas){
+    public Album (String nome, String faixaTitle, int minutos, int segundos, int quantMusicas, String MesAnoLancamento, boolean trilogia, ArrayList <MusicasAutorais> faixas){
         this.nome = nome;
         this.faixaTitle = faixaTitle;
         this.minutos = minutos;
@@ -23,7 +23,7 @@ public abstract class Album implements TrilogiaOuEra{
         this.faixas = faixas;
     }
 
-    public ArrayList <Musica> getFaixas(){
+    public ArrayList <MusicasAutorais> getFaixas(){
         return this.faixas;
     }
 
