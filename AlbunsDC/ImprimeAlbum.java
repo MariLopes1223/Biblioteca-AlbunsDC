@@ -58,10 +58,10 @@ public class ImprimeAlbum {
         ArrayList <Album> erasAlbums = umAlbum.AdicionaTrilogia(ListaAlbum);  //chama o método "AdicionaTrilogia" para descobrir quais álbuns fazem parte de uma Era ou Trilogia
         
         while (true){
-            System.out.println("Digite '1' para ver quais álbuns fazem parte de uma trilogia ou era \n Caso queira encerrar a visualização de albuns, clique em qualquer tecla.");
-            String opcao = scan.nextLine();
+            System.out.println("Digite '1' para ver quais álbuns fazem parte de uma trilogia ou era \nCaso queira encerrar a visualização de albuns, clique em qualquer tecla.");
+            int opcao = scan.nextInt();
 
-            if (opcao.equals("1")){
+            if (opcao == 1){
 
                 System.out.println("\n\n\n\nOs álbuns pertencentes a uma era ou trilogia são:\n");
 
@@ -91,10 +91,9 @@ public class ImprimeAlbum {
 
         System.out.println("Visualização de álbuns encerrada.");
         scan.nextLine();
-        limpaTelaAlbuns();
-        
     }
 
+    //imprime somente o nome de todos os albuns
     public static void ImprimirAlbuns(ArrayList <Album> ListaAlbum){
 
         int contagem = 1;
@@ -105,9 +104,4 @@ public class ImprimeAlbum {
         }
 
     }
-
-     private static void limpaTelaAlbuns(){
-    System.out.print("\033[H\033[2J");
-    System.out.flush();
- }
 }

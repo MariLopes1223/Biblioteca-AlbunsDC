@@ -17,9 +17,12 @@ public class CriarPlaylist {
         ArrayList<Cover> TodosCovers = CoverRegistro.registraCover();
         ArrayList<Musicas> todasAsMusicas = new ArrayList<>();
 
+        //adiciona musicas autorais
         for (Musicas musica : todasAsMusicasDC){
             todasAsMusicas.add(musica);
         }
+
+        //adiciona covers
         for (Musicas musica : TodosCovers){
             todasAsMusicas.add(musica);
         }
@@ -37,6 +40,7 @@ public class CriarPlaylist {
             String albumFav = user.getAlbumFav();
             albumFav = albumFav.toLowerCase();
             
+            //adiciona as músicas do album favorito
             for (Album album : ListaAlbum){
                 String albumLC = album.nome.toLowerCase();
                 
@@ -69,6 +73,7 @@ public class CriarPlaylist {
             String bsideFav = user.getBsideFav();
             bsideFav = bsideFav.toLowerCase();
             
+            //adiciona title e bside favorita
             if (add.equals("1")) {
                 int tamAtual = Playlist.size();
 
@@ -97,6 +102,7 @@ public class CriarPlaylist {
                 }
             }
 
+            //adiciona apenas title favorita
             else if (add.equals("2")) {
                 for (MusicasAutorais song : todasAsMusicasDC){
                 String musica = song.nome.toLowerCase();
@@ -108,6 +114,8 @@ public class CriarPlaylist {
                     }
                 }
             }
+
+            //adiciona apenas bside favorita
             else if (add.equals("3")){
                 for (Musicas song : todasAsMusicas){
                 String musica = song.nome.toLowerCase();
@@ -145,6 +153,7 @@ public class CriarPlaylist {
             System.out.println("\nPara adicionar músicas a sua playlist, informe individualmente seu número de acordo com a lista.\nPara terminar sua playlist digite 0");
             numSong = scan.nextInt();
 
+            //adiciona a música que o usuário escolhe 
             if (numSong != 0){
                 contagem = 1;
                 
@@ -169,6 +178,7 @@ public class CriarPlaylist {
             contagem ++;
         }
 
+        //conta o tempo total da playlist
         Funcoes.contaTempo(favs);
 
         System.out.println("Sua playlist possui " + favs.getHoras() + " horas " + favs.getMinutos() + " minutos e " + favs.getSegundos() + " segundos.");
