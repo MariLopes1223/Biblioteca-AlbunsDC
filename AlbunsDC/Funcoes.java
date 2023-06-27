@@ -2,7 +2,6 @@ package AlbunsDC;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import javax.sound.sampled.AudioInputStream;
@@ -31,18 +30,13 @@ public class Funcoes {
     return opcao;
 }
 
+//limpa tudo o que veio antes
     public static void limpaTela(){
     System.out.print("\033[H\033[2J");
     System.out.flush();
 }
 
-    public static ArrayList<Playlist> AddPlaylists (Playlist FavsUser){
-        ArrayList <Playlist> PlaylistDoUser = new ArrayList<>();
-        PlaylistDoUser.add(FavsUser);
-
-        return PlaylistDoUser;
-    }
-
+//conta o tempo total da playlist
     public static void contaTempo(Playlist favs){
         int PMinutos = 0;
         int PSegundos = 0;
@@ -71,6 +65,8 @@ public class Funcoes {
         }
     }
 
+
+//toca intro do album
     public static void playSound(String caminhoAudio) {
     try {
         File arquivoAudio = new File(caminhoAudio);

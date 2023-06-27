@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
-public class TocaIntro {
+public interface TocaIntro {
     public static void TocarIntro(ArrayList <Album> ListaAlbum, Scanner scan){
 
         ArrayList <Album> albumComIntro = new ArrayList<>();
@@ -12,6 +12,7 @@ public class TocaIntro {
 
         System.out.println("\nOs álbuns que possuem intro são:");
 
+        //imprime os albuns que possuem intro
         int contagem = 1;
         for (Album album : ListaAlbum){
             ArrayList <MusicasAutorais> faixas = album.getFaixas();
@@ -29,6 +30,7 @@ public class TocaIntro {
         String nomeIntro;
         contagem = 1;
 
+        //encontra a intro e reproduz
         for (Album albumIntro : albumComIntro){
 
             if (escolhaAlbum == contagem){

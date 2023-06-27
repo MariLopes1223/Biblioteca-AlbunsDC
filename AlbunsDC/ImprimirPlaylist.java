@@ -12,7 +12,7 @@ public class ImprimirPlaylist {
         }
         else System.out.println("A playlists criadas são: ");
 
-
+        //imprime o nome, duração e músicas de todas as playlists
         for (Playlist lista : todasPlaylists){
             System.out.println(contagem + " - " + lista.getNome());
 

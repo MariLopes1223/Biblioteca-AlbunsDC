@@ -53,7 +53,7 @@ public class Main {
                 ImprimirPlaylist.imprimePlaylist(todasPlaylists); //imprime o nome e a duração de todas as playlists
             }
             else if (opcao == 6){
-                TocaIntro.TocarIntro(ListaAlbum, scan);
+                TocaIntro.TocarIntro(ListaAlbum, scan); //toca intro escolhida pelo usuário
             }
             else {
                 System.out.println("Programa encerrado.");

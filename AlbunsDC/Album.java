@@ -2,7 +2,7 @@ package AlbunsDC;
 
 import java.util.ArrayList;
 
-public abstract class Album implements TrilogiaOuEra{
+public abstract class Album implements TrilogiaOuEra, TocaIntro{
     public String nome;
     protected String faixaTitle;
     protected int minutos;
@@ -26,8 +26,6 @@ public abstract class Album implements TrilogiaOuEra{
     public ArrayList <MusicasAutorais> getFaixas(){
         return this.faixas;
     }
-
-    public abstract void descricao();
 
     @Override
     public ArrayList<Album> AdicionaTrilogia(ArrayList <Album> ListaAlbum){

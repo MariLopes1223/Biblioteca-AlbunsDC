@@ -10,6 +10,7 @@ public class ImprimeMusica {
         
         ArrayList<MusicasAutorais> todasAsMusicas = AllSongsDC.TodaAsMusicas(ListaAlbum);
 
+        //imprime todas as musicas autorais
         for (MusicasAutorais song : todasAsMusicas){
 
             System.out.println(contagem + " - " + song.nome);
@@ -45,6 +46,7 @@ public class ImprimeMusica {
 
         contagem = 1;
 
+        //imprime todos os covers
         for (Cover cover : TodosCovers){
             System.out.println(contagem + " - " + cover.nome);
             System.out.println("O cover possui " + cover.minutos + " minutos e " + cover.segundos + " segundos.");
@@ -62,6 +64,7 @@ public class ImprimeMusica {
         Funcoes.limpaTela();
     }
 
+    //imprime somente o nome de todas as musicas autorais e covers
     public static void ImprimeNomeMus (ArrayList <Album> ListaAlbum){
         int contagem = 1;
         
