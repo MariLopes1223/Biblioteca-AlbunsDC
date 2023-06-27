@@ -4,11 +4,13 @@ import java.util.ArrayList;
 
 public class Playlist {
     private String nome;
+    private int horas;
     private int minutos;
     private int segundos;
-    private ArrayList <Musica> songs; 
+    private ArrayList <Musicas> songs; 
 
-    public Playlist(String nome, int minutos, int segundos, ArrayList<Musica> songs) {
+    public Playlist(String nome, int horas, int minutos, int segundos, ArrayList<Musicas> songs) {
+        this.horas = horas;
         this.nome = nome;
         this.minutos = minutos;
         this.segundos = segundos;
@@ -23,6 +25,14 @@ public class Playlist {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public int getHoras() {
+        return horas;
+    }
+
+    public void setHoras(int horas) {
+        this.horas = horas;
     }
 
     public int getMinutos() {
@@ -41,11 +51,11 @@ public class Playlist {
         this.segundos = segundos;
     }
 
-    public ArrayList<Musica> getSongs() {
+    public ArrayList<Musicas> getSongs() {
         return songs;
     }
 
-    public void setSongs(ArrayList<Musica> songs) {
+    public void setSongs(ArrayList<Musicas> songs) {
         this.songs = songs;
     }
 }

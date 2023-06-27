@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ImprimeAlbum {
-    public static void ImprimirAlbuns(){
+    public static void ImprimirAlbuns(Scanner scan){
 
         ArrayList <Album> ListaAlbum = AlbumRegistro.registrarAlbuns(); //Pega a lista de albuns a partir do arquivo "AlbumRegistro"
 
@@ -15,7 +15,7 @@ public class ImprimeAlbum {
         //imprime as características de cada álbum
         for (Album album : ListaAlbum) {
 
-            ArrayList<Musica> faixas = album.getFaixas();   //pega o Array de faixas do álbum atual
+            ArrayList<MusicasAutorais> faixas = album.getFaixas();   //pega o Array de faixas do álbum atual
             
             System.out.println(contagemAlbum + " - " + album.nome);
             System.out.println("Faixa title: " + album.faixaTitle);
@@ -47,7 +47,7 @@ public class ImprimeAlbum {
         int contagemMus = 1; //contagem pra enumerar as músicas
 
             //imprime o nome de todas as músicas do álbum atual
-            for (Musica song: faixas){
+            for (Musicas song: faixas){
                System.out.println(contagemMus + " - " + song.nome);
                contagemMus ++;
         }
@@ -56,12 +56,10 @@ public class ImprimeAlbum {
 
         Album umAlbum = ListaAlbum.get(0);   //pega o primeiro álbum do array
         ArrayList <Album> erasAlbums = umAlbum.AdicionaTrilogia(ListaAlbum);  //chama o método "AdicionaTrilogia" para descobrir quais álbuns fazem parte de uma Era ou Trilogia
-
-        Scanner scanner = new Scanner(System.in);
         
         while (true){
-            System.out.println("Para ver quais álbuns fazem parte de uma trilogia ou era, digite 1, caso queira encerrar a visualização de albuns, clique em qualquer tecla.");
-            String opcao = scanner.next();
+            System.out.println("Digite '1' para ver quais álbuns fazem parte de uma trilogia ou era \n Caso queira encerrar a visualização de albuns, clique em qualquer tecla.");
+            String opcao = scan.nextLine();
 
             if (opcao.equals("1")){
 
@@ -86,8 +84,30 @@ public class ImprimeAlbum {
                     }
                     System.out.println("-----------------------\n");
                 }
+                break;
             }
             else break;
         }
+
+        System.out.println("Visualização de álbuns encerrada.");
+        scan.nextLine();
+        limpaTelaAlbuns();
+        
     }
+
+    public static void ImprimirAlbuns(ArrayList <Album> ListaAlbum){
+
+        int contagem = 1;
+
+        for (Album album : ListaAlbum){
+            System.out.println(contagem + " - " + album.nome);
+            contagem ++;
+        }
+
+    }
+
+     private static void limpaTelaAlbuns(){
+    System.out.print("\033[H\033[2J");
+    System.out.flush();
+ }
 }

@@ -26,31 +26,44 @@ public class Main {
         user.setAlbumFav(scan.nextLine());
 
         System.out.println("\n");
+        scan.nextLine();
+
+        Funcoes.limpaTela();
+
+        ArrayList <Playlist> todasPlaylists = new ArrayList<>();
 
         while (true){
 
-            System.out.println("Para ver os álbuns e suas respectivas músicas digite 1, para ver apenas as músicas, digite 2. Para sair clique em qualquer tecla.");
-            String opcao = scan.next();
+            int opcao = Funcoes.exibirMenu(scan);
             
-            if (opcao.equals("1")){
-                ImprimeAlbum.ImprimirAlbuns(); //imprime todos os albuns
+            if (opcao == 1){
+                ImprimeAlbum.ImprimirAlbuns(ListaAlbum); // imprime o nome de todos os albuns
             }
-            else if (opcao.equals("2")){
+            else if (opcao == 2){
+                ImprimeAlbum.ImprimirAlbuns(scan); //imprime todos os albuns
+            }
+            else if (opcao == 3){
                 System.out.println("\n");
-                ImprimeMusica.imprimirMusica(ListaAlbum); //imprime todas as músicas
+                ImprimeMusica.imprimirMusica(ListaAlbum, scan); //imprime todas as músicas
+            }       
+            else if (opcao == 4){
+                todasPlaylists.add(CriarPlaylist.CriaPlaylist(user, scan)); //cria playlist
             }
-            else break;
-        }
-
-        System.out.println(user.getNome() + ", você deseja criar uma playlist? Clique 1 se sim, caso deseje encerrar o programa, clique em qualquer tecla.");
-        String playlist = scan.nextLine();
-
-            if (playlist.equals("1")){
-                Playlist favs = new Playlist();
+            else if (opcao == 5){
+                ImprimirPlaylist.imprimePlaylist(todasPlaylists); //imprime o nome e a duração de todas as playlists
             }
-
-        scan.close();
+            else if (opcao == 6){
+                TocaIntro.TocarIntro(ListaAlbum, scan);
+            }
+            else {
+                System.out.println("Programa encerrado.");
+                System.exit(0);
+            }
     }
+
 }
+}
+
+
     
         

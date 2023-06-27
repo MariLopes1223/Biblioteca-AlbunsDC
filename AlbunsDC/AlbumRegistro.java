@@ -5,35 +5,35 @@ import java.util.ArrayList;
 public class AlbumRegistro{
     public static ArrayList<Album> registrarAlbuns() {
 
-        Musica WTD = new Musica("Welcome To Dream", 0, 41, null, false, false);
-        Musica CM = new Musica("Chase Me", 3, 10, null, true, false);
-        Musica Emotion = new Musica("Emotion (소원 하나)", 3, 44, null, false, false);
-        Musica CMI = new Musica("Chase Me (Inst.)", 3, 10, null, false, false);
-        ArrayList <Musica> listaNightmare = new ArrayList<>();
+        MusicasAutorais WTD = new MusicasAutorais("Welcome To Dream", 00, 41, null, false, false);
+        MusicasAutorais CM = new MusicasAutorais("Chase Me", 3, 10, null, true, false);
+        MusicasAutorais Emotion = new MusicasAutorais("Emotion (소원 하나)", 3, 44, null, false, false);
+        MusicasAutorais CMI = new MusicasAutorais("Chase Me (Inst.)", 3, 10, null, false, false);
+        ArrayList <MusicasAutorais> listaNightmare = new ArrayList<>();
         listaNightmare.add(WTD);
         listaNightmare.add(CM);
         listaNightmare.add(Emotion);
         listaNightmare.add(CMI);
 
 
-        Musica MT = new Musica("My Toys", 1, 07, null, false, false);
-        Musica GN = new Musica("Good Night", 2, 55, null, true, false);
-        Musica Lullaby = new Musica("Lullaby", 3, 19, null, false, false);
-        Musica GNI = new Musica("Good Night (Inst.)", 2, 55, null, false, false);
-        ArrayList <Musica> listaFAITM = new ArrayList<>();
+        MusicasAutorais MT = new MusicasAutorais("My Toys", 1, 07, null, false, false);
+        MusicasAutorais GN = new MusicasAutorais("Good Night", 2, 55, null, true, false);
+        MusicasAutorais Lullaby = new MusicasAutorais("Lullaby", 3, 19, null, false, false);
+        MusicasAutorais GNI = new MusicasAutorais("Good Night (Inst.)", 2, 55, null, false, false);
+        ArrayList <MusicasAutorais> listaFAITM = new ArrayList<>();
         listaFAITM.add(MT);
         listaFAITM.add(GN);
         listaFAITM.add(Lullaby);
         listaFAITM.add(GNI);
 
         
-        Musica BAI = new Musica("Before & After (Intro)", 1, 11, null, false, false);
-        Musica FH = new Musica("날아올라 (Fly High)", 3, 32, null, true, false);
-        Musica WU = new Musica("Wake Up", 3, 33, null, false, false);
-        Musica SW = new Musica("Sleep-Walking", 3, 27, null, false, false);
-        Musica IO = new Musica("It's Okay! (괜찮아!)", 3, 25, null, false, false);
-        Musica FHI = new Musica("날아올라 (Fly High) Inst.", 3, 32, null, false, false);
-        ArrayList <Musica> listaPrequel = new ArrayList<>();
+        MusicasAutorais BAI = new MusicasAutorais("Before & After (Intro)", 1, 11, null, false, false);
+        MusicasAutorais FH = new MusicasAutorais("날아올라 (Fly High)", 3, 32, null, true, false);
+        MusicasAutorais WU = new MusicasAutorais("Wake Up", 3, 33, null, false, false);
+        MusicasAutorais SW = new MusicasAutorais("Sleep-Walking", 3, 27, null, false, false);
+        MusicasAutorais IO = new MusicasAutorais("It's Okay! (괜찮아!)", 3, 25, null, false, false);
+        MusicasAutorais FHI = new MusicasAutorais("날아올라 (Fly High) Inst.", 3, 32, null, false, false);
+        ArrayList <MusicasAutorais> listaPrequel = new ArrayList<>();
         listaPrequel.add(BAI);
         listaPrequel.add(FH);
         listaPrequel.add(WU);
@@ -42,20 +42,20 @@ public class AlbumRegistro{
         listaPrequel.add(FHI);
 
         
-        Musica FM = new Musica("Full Moon", 3, 10, null, true, false);
-        Musica FMI = new Musica("Full Moon (Inst.)", 3, 10, null, false, false);
-        ArrayList <Musica> listaFM = new ArrayList<>();
+        MusicasAutorais FM = new MusicasAutorais("Full Moon", 3, 10, null, true, false);
+        MusicasAutorais FMI = new MusicasAutorais("Full Moon (Inst.)", 3, 10, null, false, false);
+        ArrayList <MusicasAutorais> listaFM = new ArrayList<>();
         listaFM.add(FM);
         listaFM.add(FMI);
 
         
-        Musica IOI = new Musica("Inside - Outside (Intro)", 1, 24, null, false, false);
-        Musica YAI = new Musica("You and I", 3, 16, null, true, false);
-        Musica Mayday = new Musica("Mayday", 3, 05, null, false, false);
-        Musica WAS = new Musica("어느 별 (Which A Star)", 4, 9, null, false, false);
-        Musica Scar = new Musica("이 더럽고도 추한... (Scar)", 3, 17, null, false, false);
-        Musica YAII = new Musica("You And I (Inst.)", 3, 16, null, false, false);
-        ArrayList <Musica> listaETE = new ArrayList<>();
+        MusicasAutorais IOI = new MusicasAutorais("Inside - Outside (Intro)", 1, 24, null, false, false);
+        MusicasAutorais YAI = new MusicasAutorais("You and I", 3, 16, null, true, false);
+        MusicasAutorais Mayday = new MusicasAutorais("Mayday", 3, 05, null, false, false);
+        MusicasAutorais WAS = new MusicasAutorais("어느 별 (Which A Star)", 4, 9, null, false, false);
+        MusicasAutorais Scar = new MusicasAutorais("이 더럽고도 추한... (Scar)", 3, 17, null, false, false);
+        MusicasAutorais YAII = new MusicasAutorais("You And I (Inst.)", 3, 16, null, false, false);
+        ArrayList <MusicasAutorais> listaETE = new ArrayList<>();
         listaETE.add(IOI);
         listaETE.add(YAI);
         listaETE.add(Mayday);
@@ -64,13 +64,13 @@ public class AlbumRegistro{
         listaETE.add(YAII);
 
         
-        Musica Intro = new Musica("Intro", 1, 07, null, false, false);
-        Musica What = new Musica("What", 3, 26, null, true, false);
-        Musica Wonderland = new Musica("Wonderland", 3, 12, null, false, false);
-        Musica Trap = new Musica("Trap", 3, 11, null, false, false);
-        Musica J7 = new Musica("약속해 우리 (July 7th)", 3, 15, null, false, false);
-        Musica WI = new Musica("What (Inst.)", 3, 26, null, false, false);
-        ArrayList <Musica> listaAITC = new ArrayList<>();
+        MusicasAutorais Intro = new MusicasAutorais("Intro - Alone", 1, 07, null, false, false);
+        MusicasAutorais What = new MusicasAutorais("What", 3, 26, null, true, false);
+        MusicasAutorais Wonderland = new MusicasAutorais("Wonderland", 3, 12, null, false, false);
+        MusicasAutorais Trap = new MusicasAutorais("Trap", 3, 11, null, false, false);
+        MusicasAutorais J7 = new MusicasAutorais("약속해 우리 (July 7th)", 3, 15, null, false, false);
+        MusicasAutorais WI = new MusicasAutorais("What (Inst.)", 3, 26, null, false, false);
+        ArrayList <MusicasAutorais> listaAITC = new ArrayList<>();
         listaAITC.add(Intro);
         listaAITC.add(What);
         listaAITC.add(Wonderland);
@@ -79,29 +79,29 @@ public class AlbumRegistro{
         listaAITC.add(WI);
 
       
-        Musica WJV = new Musica("What Japanese Ver.", 3, 28, null, false, true);
-        Musica CMJV = new Musica("Chase Me Japanese Ver.", 3, 12, null, false, true);
-        Musica IMY = new Musica("I Miss You", 3, 9, null, false, true);
-        ArrayList <Musica> listaWJV = new ArrayList<>();
+        MusicasAutorais WJV = new MusicasAutorais("What Japanese Ver.", 3, 28, null, false, true);
+        MusicasAutorais CMJV = new MusicasAutorais("Chase Me Japanese Ver.", 3, 12, null, false, true);
+        MusicasAutorais IMY = new MusicasAutorais("I Miss You", 3, 9, null, false, true);
+        ArrayList <MusicasAutorais> listaWJV = new ArrayList<>();
         listaWJV.add(WJV);
         listaWJV.add(CMJV);
         listaWJV.add(IMY);
 
         
-        Musica OTS = new Musica("하늘을 넘어 (Over the Sky)", 3, 18, null, true, false);
-        Musica OTSI = new Musica("하늘을 넘어 (Over the Sky) Inst.", 3, 18, null, false, false);
-        ArrayList <Musica> listaOTS = new ArrayList<>();
+        MusicasAutorais OTS = new MusicasAutorais("하늘을 넘어 (Over the Sky)", 3, 18, null, true, false);
+        MusicasAutorais OTSI = new MusicasAutorais("하늘을 넘어 (Over the Sky) Inst.", 3, 18, null, false, false);
+        ArrayList <MusicasAutorais> listaOTS = new ArrayList<>();
         listaOTS.add(OTS);
         listaOTS.add(OTSI);
 
         
-        Musica IntroN = new Musica("Intro", 1, 07, null, false, false);
-        Musica Piri = new Musica("Piri", 3, 27, null, true, false);
-        Musica Diamond = new Musica("Diamond", 3, 22, null, false, false);
-        Musica ATWNOL = new Musica("그리고 아무도 없었다 (And There Was No One Left)", 2, 53, null, false, false);
-        Musica Daydream = new Musica("Daydream (백일몽)", 3, 33, null, false, false);
-        Musica PI = new Musica("Piri (Inst.)", 3, 27, null, false, false);
-        ArrayList <Musica> listaTEOTN = new ArrayList<>();
+        MusicasAutorais IntroN = new MusicasAutorais("Intro (Intro)", 1, 07, null, false, false);
+        MusicasAutorais Piri = new MusicasAutorais("Piri", 3, 27, null, true, false);
+        MusicasAutorais Diamond = new MusicasAutorais("Diamond", 3, 22, null, false, false);
+        MusicasAutorais ATWNOL = new MusicasAutorais("그리고 아무도 없었다 (And There Was No One Left)", 2, 53, null, false, false);
+        MusicasAutorais Daydream = new MusicasAutorais("Daydream (백일몽)", 3, 33, null, false, false);
+        MusicasAutorais PI = new MusicasAutorais("Piri (Inst.)", 3, 27, null, false, false);
+        ArrayList <MusicasAutorais> listaTEOTN = new ArrayList<>();
         listaTEOTN.add(IntroN);
         listaTEOTN.add(Piri);
         listaTEOTN.add(Diamond);
@@ -110,28 +110,28 @@ public class AlbumRegistro{
         listaTEOTN.add(PI);
 
         
-        Musica PFWFJV = new Musica("Piri ~ Fue wo Fuke ~ -Japanese Ver.", 3, 29, null, false, true);
-        Musica GNJV = new Musica("Good Night - Japanese Ver.", 2, 58, null, false, true);
-        Musica WoJV = new Musica("Wonderland - Japanese Ver.", 3, 14, null, false, true);
-        ArrayList <Musica> listaPJV = new ArrayList<>();
+        MusicasAutorais PFWFJV = new MusicasAutorais("Piri ~ Fue wo Fuke ~ -Japanese Ver.", 3, 29, null, false, true);
+        MusicasAutorais GNJV = new MusicasAutorais("Good Night - Japanese Ver.", 2, 58, null, false, true);
+        MusicasAutorais WoJV = new MusicasAutorais("Wonderland - Japanese Ver.", 3, 14, null, false, true);
+        ArrayList <MusicasAutorais> listaPJV = new ArrayList<>();
         listaPJV.add(PFWFJV);
         listaPJV.add(GNJV);
         listaPJV.add(WoJV);
 
 
-        Musica IBO = new Musica("Intro", 1, 28, null, false, true);
-        Musica BO = new Musica("Breaking Out", 3, 20, null, true, true);
-        Musica MW = new Musica("My Way ~ Kono Michi No Sakie ~", 3, 25, null, false, true);
-        Musica CMJ = new Musica("Chase Me - Japanese Ver.", 3, 12, null, false, true);
-        Musica GNJV2 = new Musica("Good Night - Japanese Ver.", 2, 58, null, false, true);
-        Musica WoJV2 = new Musica("Wonderland - Japanese Ver", 3, 14, null, false, true);
-        Musica PFWFJV2 = new Musica("Piri ~ Fue wo Fuke ~ - Japanese Ver", 3, 29, null, false, true);
-        Musica WJV2 = new Musica("What - Japanese Ver", 3, 28, null, false, true);
-        Musica IMY2 = new Musica("I Miss You", 3, 9, null, false, true);
-        Musica MHNN = new Musica("Mata Hitori Ni Natta - Japanese Ver", 2, 55, null, false, true);
-        Musica YAIJV = new Musica("You And I - Japanese Ver", 3, 16, null, false, true);
-        Musica Outro = new Musica("Outro", 1, 45, null, false, true);
-        ArrayList <Musica> listaTBOTE = new ArrayList<>();
+        MusicasAutorais IBO = new MusicasAutorais("Intro - Breaking", 1, 28, null, false, true);
+        MusicasAutorais BO = new MusicasAutorais("Breaking Out", 3, 20, null, true, true);
+        MusicasAutorais MW = new MusicasAutorais("My Way ~ Kono Michi No Sakie ~", 3, 25, null, false, true);
+        MusicasAutorais CMJ = new MusicasAutorais("Chase Me - Japanese Ver.", 3, 12, null, false, true);
+        MusicasAutorais GNJV2 = new MusicasAutorais("Good Night - Japanese Ver.", 2, 58, null, false, true);
+        MusicasAutorais WoJV2 = new MusicasAutorais("Wonderland - Japanese Ver", 3, 14, null, false, true);
+        MusicasAutorais PFWFJV2 = new MusicasAutorais("Piri ~ Fue wo Fuke ~ - Japanese Ver", 3, 29, null, false, true);
+        MusicasAutorais WJV2 = new MusicasAutorais("What - Japanese Ver", 3, 28, null, false, true);
+        MusicasAutorais IMY2 = new MusicasAutorais("I Miss You", 3, 9, null, false, true);
+        MusicasAutorais MHNN = new MusicasAutorais("Mata Hitori Ni Natta - Japanese Ver", 2, 55, null, false, true);
+        MusicasAutorais YAIJV = new MusicasAutorais("You And I - Japanese Ver", 3, 16, null, false, true);
+        MusicasAutorais Outro = new MusicasAutorais("Outro", 1, 45, null, false, true);
+        ArrayList <MusicasAutorais> listaTBOTE = new ArrayList<>();
         listaTBOTE.add(IBO);
         listaTBOTE.add(BO);
         listaTBOTE.add(MW);
@@ -146,13 +146,13 @@ public class AlbumRegistro{
         listaTBOTE.add(Outro);
 
 
-        Musica IROD = new Musica("Intro", 1, 32, null, false, false);
-        Musica DV = new Musica("데자부 (Deja Vu)", 3, 45, null, true, false);
-        Musica TCOTS = new Musica("거미의 저주 (The Curse Of The Spider)", 3, 11, null, false, false);
-        Musica SN = new Musica("Silent Night", 3, 19, null, false, false);
-        Musica Polaris = new Musica("북극성 (Polaris)", 3, 54, null, false, false);
-        Musica DVJV = new Musica("Deja Vu (Japanese Ver.)", 3, 45, null, false, false);
-        ArrayList <Musica> listaROD = new ArrayList<>();
+        MusicasAutorais IROD = new MusicasAutorais("Intro - Deja Vu", 1, 32, null, false, false);
+        MusicasAutorais DV = new MusicasAutorais("데자부 (Deja Vu)", 3, 45, null, true, false);
+        MusicasAutorais TCOTS = new MusicasAutorais("거미의 저주 (The Curse Of The Spider)", 3, 11, null, false, false);
+        MusicasAutorais SN = new MusicasAutorais("Silent Night", 3, 19, null, false, false);
+        MusicasAutorais Polaris = new MusicasAutorais("북극성 (Polaris)", 3, 54, null, false, false);
+        MusicasAutorais DVJV = new MusicasAutorais("Deja Vu (Japanese Ver.)", 3, 45, null, false, false);
+        ArrayList <MusicasAutorais> listaROD = new ArrayList<>();
         listaROD.add(IROD);
         listaROD.add(DV);
         listaROD.add(TCOTS);
@@ -161,21 +161,21 @@ public class AlbumRegistro{
         listaROD.add(DVJV);
 
 
-        Musica ID = new Musica("Intro", 1, 20, null, false, false);
-        Musica Scream = new Musica("Scream", 3, 25, null, true, false);
-        Musica Tension = new Musica("Tension", 3, 12, null, false, false);
-        Musica RS = new Musica("Red Sun", 3, 06, null, false, false);
-        Musica BOW = new Musica("Black Or White", 3, 25, null, false, false);
-        Musica JB = new Musica("Jazz Bar", 3, 35, null, false, false);
-        Musica Sahara = new Musica("SAHARA", 3, 11, null, false, false);
-        Musica ITF = new Musica("In The Frozen", 3, 17, null, false, false);
-        Musica DB = new Musica("Daybreak", 3, 04, null, false, false);
-        Musica FM2 = new Musica("Full Moon", 3, 10, null, false, false);
-        Musica OTS2 = new Musica("Over The Sky", 3, 18, null, false, false);
-        Musica Outro2 = new Musica("Outro", 1, 04, null, false, false);
-        Musica SI = new Musica("Scream (Inst.)", 3, 25, null, false, false);
-        Musica PSS = new Musica("Paradise (Siyeon Solo)", 4, 04, null, false, false);
-        ArrayList <Musica> listaDTTOL = new ArrayList<>();
+        MusicasAutorais ID = new MusicasAutorais("Intro - Scream", 1, 20, null, false, false);
+        MusicasAutorais Scream = new MusicasAutorais("Scream", 3, 25, null, true, false);
+        MusicasAutorais Tension = new MusicasAutorais("Tension", 3, 12, null, false, false);
+        MusicasAutorais RS = new MusicasAutorais("Red Sun", 3, 06, null, false, false);
+        MusicasAutorais BOW = new MusicasAutorais("Black Or White", 3, 25, null, false, false);
+        MusicasAutorais JB = new MusicasAutorais("Jazz Bar", 3, 35, null, false, false);
+        MusicasAutorais Sahara = new MusicasAutorais("SAHARA", 3, 11, null, false, false);
+        MusicasAutorais ITF = new MusicasAutorais("In The Frozen", 3, 17, null, false, false);
+        MusicasAutorais DB = new MusicasAutorais("Daybreak", 3, 04, null, false, false);
+        MusicasAutorais FM2 = new MusicasAutorais("Full Moon", 3, 10, null, false, false);
+        MusicasAutorais OTS2 = new MusicasAutorais("Over The Sky", 3, 18, null, false, false);
+        MusicasAutorais Outro2 = new MusicasAutorais("Outro", 1, 04, null, false, false);
+        MusicasAutorais SI = new MusicasAutorais("Scream (Inst.)", 3, 25, null, false, false);
+        MusicasAutorais PSS = new MusicasAutorais("Paradise (Siyeon Solo)", 4, 04, null, false, false);
+        ArrayList <MusicasAutorais> listaDTTOL = new ArrayList<>();
         listaDTTOL.add(ID);
         listaDTTOL.add(Scream);
         listaDTTOL.add(Tension);
@@ -192,29 +192,29 @@ public class AlbumRegistro{
         listaDTTOL.add(PSS);
 
 
-        Musica EN = new Musica("Endless Night", 3, 18, null, true, true);
-        Musica OTSJV = new Musica("Over The Sky - Japanese Ver.", 3, 20, null, false, true);
-        Musica SNJV = new Musica("Silent Night - Japanese Ver.", 3, 21, null, false, true);
-        ArrayList <Musica> listaEN = new ArrayList<>();
+        MusicasAutorais EN = new MusicasAutorais("Endless Night", 3, 18, null, true, true);
+        MusicasAutorais OTSJV = new MusicasAutorais("Over The Sky - Japanese Ver.", 3, 20, null, false, true);
+        MusicasAutorais SNJV = new MusicasAutorais("Silent Night - Japanese Ver.", 3, 21, null, false, true);
+        ArrayList <MusicasAutorais> listaEN = new ArrayList<>();
         listaEN.add(EN);
         listaEN.add(OTSJV);
         listaEN.add(SNJV);
 
 
-        Musica RB = new Musica("R.o.S.E BLUE (Prod ESTi)", 4, 01, null, true, false);
-        Musica RBI = new Musica("R.o.S.E BLUE (Prod ESTi) (Inst.)", 4, 01, null, false, false);
-        ArrayList <Musica> listaRB = new ArrayList<>();
+        MusicasAutorais RB = new MusicasAutorais("R.o.S.E BLUE (Prod ESTi)", 4, 01, null, true, false);
+        MusicasAutorais RBI = new MusicasAutorais("R.o.S.E BLUE (Prod ESTi) (Inst.)", 4, 01, null, false, false);
+        ArrayList <MusicasAutorais> listaRB = new ArrayList<>();
         listaRB.add(RB);
         listaRB.add(RBI);
 
 
-        Musica ILM = new Musica("Intro", 1, 40, null, false, false);
-        Musica BOCA = new Musica("BOCA", 3, 10, null, true, false);
-        Musica BTW = new Musica("Break The Wall", 3, 47, null, false, false);
-        Musica CGYOOMM = new Musica("Can't Get You Out Of My Mind", 3, 44, null, false, false);
-        Musica Dear = new Musica("Dear", 3, 49, null, false, false);
-        Musica BI = new Musica("BOCA (Inst.)", 3, 10, null, false, false);
-        ArrayList <Musica> listaDLM = new ArrayList<>();
+        MusicasAutorais ILM = new MusicasAutorais("Intro - Lose", 1, 40, null, false, false);
+        MusicasAutorais BOCA = new MusicasAutorais("BOCA", 3, 10, null, true, false);
+        MusicasAutorais BTW = new MusicasAutorais("Break The Wall", 3, 47, null, false, false);
+        MusicasAutorais CGYOOMM = new MusicasAutorais("Can't Get You Out Of My Mind", 3, 44, null, false, false);
+        MusicasAutorais Dear = new MusicasAutorais("Dear", 3, 49, null, false, false);
+        MusicasAutorais BI = new MusicasAutorais("BOCA (Inst.)", 3, 10, null, false, false);
+        ArrayList <MusicasAutorais> listaDLM = new ArrayList<>();
         listaDLM.add(ILM);
         listaDLM.add(BOCA);
         listaDLM.add(BTW);
@@ -223,19 +223,19 @@ public class AlbumRegistro{
         listaDLM.add(BI);
 
 
-        Musica NM = new Musica("No More", 3, 17, null, true, true);
-        ArrayList <Musica> listaNM = new ArrayList<>();
+        MusicasAutorais NM = new MusicasAutorais("No More", 3, 17, null, true, true);
+        ArrayList <MusicasAutorais> listaNM = new ArrayList<>();
         listaNM.add(NM);
 
 
-        Musica IRTU = new Musica("Intro", 1, 32, null, false, false);
-        Musica OE = new Musica("Odd Eye", 3, 05, null, true, false);
-        Musica WB = new Musica("Wind Blows", 3, 18, null, false, false);
-        Musica PL = new Musica("Poison Love", 3, 58, null, false, false);
-        Musica FourM = new Musica("4 Memory", 3, 9, null, false, false);
-        Musica ND = new Musica("New Days", 3, 32, null, false, false);
-        Musica OEI = new Musica("Odd Eye (Inst.)", 3, 05, null, false, false);
-        ArrayList <Musica> listaDRTU = new ArrayList<>();
+        MusicasAutorais IRTU = new MusicasAutorais("Intro - ODD", 1, 32, null, false, false);
+        MusicasAutorais OE = new MusicasAutorais("Odd Eye", 3, 05, null, true, false);
+        MusicasAutorais WB = new MusicasAutorais("Wind Blows", 3, 18, null, false, false);
+        MusicasAutorais PL = new MusicasAutorais("Poison Love", 3, 58, null, false, false);
+        MusicasAutorais FourM = new MusicasAutorais("4 Memory", 3, 9, null, false, false);
+        MusicasAutorais ND = new MusicasAutorais("New Days", 3, 32, null, false, false);
+        MusicasAutorais OEI = new MusicasAutorais("Odd Eye (Inst.)", 3, 05, null, false, false);
+        ArrayList <MusicasAutorais> listaDRTU = new ArrayList<>();
         listaDRTU.add(IRTU);
         listaDRTU.add(OE);
         listaDRTU.add(WB);
@@ -245,13 +245,13 @@ public class AlbumRegistro{
         listaDRTU.add(OEI);
 
 
-        Musica Eclipse = new Musica("Eclipse", 3, 24, null, true, true);
-        Musica NM2 = new Musica("No More", 3, 17, null, true, true);
-        Musica DLMF = new Musica("Don't Light My Fire", 3, 30, null, false, true);
-        Musica EI = new Musica("Eclipse (Inst.)", 3, 23, null, false, true);
-        Musica NMI = new Musica("No More (Inst.)", 3, 17, null, false, true);
-        Musica DLMFI = new Musica("Don't Light My Fire (Inst.)", 3, 29, null, false, true);
-        ArrayList <Musica> listaEclipse = new ArrayList<>();
+        MusicasAutorais Eclipse = new MusicasAutorais("Eclipse", 3, 24, null, true, true);
+        MusicasAutorais NM2 = new MusicasAutorais("No More", 3, 17, null, true, true);
+        MusicasAutorais DLMF = new MusicasAutorais("Don't Light My Fire", 3, 30, null, false, true);
+        MusicasAutorais EI = new MusicasAutorais("Eclipse (Inst.)", 3, 23, null, false, true);
+        MusicasAutorais NMI = new MusicasAutorais("No More (Inst.)", 3, 17, null, false, true);
+        MusicasAutorais DLMFI = new MusicasAutorais("Don't Light My Fire (Inst.)", 3, 29, null, false, true);
+        ArrayList <MusicasAutorais> listaEclipse = new ArrayList<>();
         listaEclipse.add(Eclipse);
         listaEclipse.add(NM2);
         listaEclipse.add(DLMF);
@@ -260,13 +260,13 @@ public class AlbumRegistro{
         listaEclipse.add(DLMFI);
 
 
-        Musica ISH = new Musica("Intro", 1, 16, null, false, false);
-        Musica BE = new Musica("BEcause", 3, 12, null, true, false);
-        Musica Airplane = new Musica("Airplane", 3, 01, null, false, false);
-        Musica Whistle = new Musica("Whistle", 3, 30, null, false, false);
-        Musica ADL = new Musica("Alldaylong", 3, 38, null, false, false);
-        Musica AHOS = new Musica("A Heart Of Sunflower", 4, 18, null, false, false);
-        ArrayList <Musica> listaSH = new ArrayList<>();
+        MusicasAutorais ISH = new MusicasAutorais("Intro - Summer", 1, 16, null, false, false);
+        MusicasAutorais BE = new MusicasAutorais("BEcause", 3, 12, null, true, false);
+        MusicasAutorais Airplane = new MusicasAutorais("Airplane", 3, 01, null, false, false);
+        MusicasAutorais Whistle = new MusicasAutorais("Whistle", 3, 30, null, false, false);
+        MusicasAutorais ADL = new MusicasAutorais("Alldaylong", 3, 38, null, false, false);
+        MusicasAutorais AHOS = new MusicasAutorais("A Heart Of Sunflower", 4, 18, null, false, false);
+        ArrayList <MusicasAutorais> listaSH = new ArrayList<>();
         listaSH.add(ISH);
         listaSH.add(BE);
         listaSH.add(Airplane);
@@ -275,21 +275,21 @@ public class AlbumRegistro{
         listaSH.add(AHOS);
 
 
-        Musica ISU = new Musica("Intro: Save Us", 1, 02, null, false, false);
-        Musica LIAD = new Musica("Locked Inside A Door", 3, 8, null, false, false);
-        Musica Maison = new Musica("Maison", 3, 06, null, true, false);
-        Musica Starlight = new Musica("Starlight", 3, 20, null, false, false);
-        Musica Together = new Musica("Together", 3, 45, null, false, false);
-        Musica ANW = new Musica("Always (널 위해)", 4, 30, null, false, false);
-        Musica STSD = new Musica("Skit: The Seven Doors", 1, 46, null, false, false);
-        Musica CRMJ = new Musica("Cherry (Real Miracle) - (JiU Solo)", 3, 16, null, true, false);
-        Musica NDS = new Musica("No Dot (SuA Solo)", 3, 20, null, true, false);
-        Musica ES = new Musica("Entrancing (황흘경 (极夜)) - (Siyeon Solo)", 3, 33, null, true, false);
-        Musica WH = new Musica("Winter (한겨울 (寒冬)) - (Handong Solo)", 3, 52, null, true, false);
-        Musica FY = new Musica("For - (Yoohyeon Solo)", 3, 45, null, true, false);
-        Musica BFD = new Musica("Beauty Full - (Dami Solo)", 3, 04, null, true, false);
-        Musica PG = new Musica("Playground - (Gahyeon Solo)", 3, 02, null, true, false);
-        ArrayList <Musica> listaASU = new ArrayList<>();
+        MusicasAutorais ISU = new MusicasAutorais("Intro: Save Us", 1, 02, null, false, false);
+        MusicasAutorais LIAD = new MusicasAutorais("Locked Inside A Door", 3, 8, null, false, false);
+        MusicasAutorais Maison = new MusicasAutorais("Maison", 3, 06, null, true, false);
+        MusicasAutorais Starlight = new MusicasAutorais("Starlight", 3, 20, null, false, false);
+        MusicasAutorais Together = new MusicasAutorais("Together", 3, 45, null, false, false);
+        MusicasAutorais ANW = new MusicasAutorais("Always (널 위해)", 4, 30, null, false, false);
+        MusicasAutorais STSD = new MusicasAutorais("Skit: The Seven Doors", 1, 46, null, false, false);
+        MusicasAutorais CRMJ = new MusicasAutorais("Cherry (Real Miracle) - (JiU Solo)", 3, 16, null, true, false);
+        MusicasAutorais NDS = new MusicasAutorais("No Dot (SuA Solo)", 3, 20, null, true, false);
+        MusicasAutorais ES = new MusicasAutorais("Entrancing (황흘경 (极夜)) - (Siyeon Solo)", 3, 33, null, true, false);
+        MusicasAutorais WH = new MusicasAutorais("Winter (한겨울 (寒冬)) - (Handong Solo)", 3, 52, null, true, false);
+        MusicasAutorais FY = new MusicasAutorais("For - (Yoohyeon Solo)", 3, 45, null, true, false);
+        MusicasAutorais BFD = new MusicasAutorais("Beauty Full - (Dami Solo)", 3, 04, null, true, false);
+        MusicasAutorais PG = new MusicasAutorais("Playground - (Gahyeon Solo)", 3, 02, null, true, false);
+        ArrayList <MusicasAutorais> listaASU = new ArrayList<>();
         listaASU.add(ISU);
         listaASU.add(LIAD);
         listaASU.add(Maison);
@@ -306,13 +306,13 @@ public class AlbumRegistro{
         listaASU.add(PG);
 
 
-        Musica ICX = new Musica("Intro: Chaotical X", 1, 13, null, false, false);
-        Musica Vision = new Musica("Vision", 3, 10, null, true, false);
-        Musica FT = new Musica("Fairytale", 3, 52, null, false, false);
-        Musica SL = new Musica("Some Love", 2, 53, null, false, false);
-        Musica RD = new Musica("Rainy Day (이 비가 그칠 때면)", 3, 38, null, false, false);
-        Musica OMN = new Musica("Outro: Mother Nature", 1, 12, null, false, false);
-        ArrayList <Musica> listaAFU = new ArrayList<>();
+        MusicasAutorais ICX = new MusicasAutorais("Intro: Chaotical X", 1, 13, null, false, false);
+        MusicasAutorais Vision = new MusicasAutorais("Vision", 3, 10, null, true, false);
+        MusicasAutorais FT = new MusicasAutorais("Fairytale", 3, 52, null, false, false);
+        MusicasAutorais SL = new MusicasAutorais("Some Love", 2, 53, null, false, false);
+        MusicasAutorais RD = new MusicasAutorais("Rainy Day (이 비가 그칠 때면)", 3, 38, null, false, false);
+        MusicasAutorais OMN = new MusicasAutorais("Outro: Mother Nature", 1, 12, null, false, false);
+        ArrayList <MusicasAutorais> listaAFU = new ArrayList<>();
         listaAFU.add(ICX);
         listaAFU.add(Vision);
         listaAFU.add(FT);
@@ -321,19 +321,19 @@ public class AlbumRegistro{
         listaAFU.add(OMN);
 
 
-        Musica Reason = new Musica("Reason", 3, 23, null, true, false);
-        Musica RI = new Musica("Reason (Inst.)", 3, 23, null, false, false);
-        ArrayList <Musica> listaReason = new ArrayList<>();
+        MusicasAutorais Reason = new MusicasAutorais("Reason", 3, 23, null, true, false);
+        MusicasAutorais RI = new MusicasAutorais("Reason (Inst.)", 3, 23, null, false, false);
+        ArrayList <MusicasAutorais> listaReason = new ArrayList<>();
         listaReason.add(Reason);
         listaReason.add(RI);
 
 
-        Musica IFU = new Musica("Intro: From Us", 1, 9, null, false, false);
-        Musica BV = new Musica("BONVOYAGE", 3, 34, null, true, false);
-        Musica Demian = new Musica("DEMIAN", 3, 00, null, false, false);
-        Musica PP = new Musica("Propose", 3, 13, null, false, false);
-        Musica TY = new Musica("To. You", 3, 26, null, false, false);
-        ArrayList <Musica> listaAFrU = new ArrayList<>();
+        MusicasAutorais IFU = new MusicasAutorais("Intro: From Us", 1, 9, null, false, false);
+        MusicasAutorais BV = new MusicasAutorais("BONVOYAGE", 3, 34, null, true, false);
+        MusicasAutorais Demian = new MusicasAutorais("DEMIAN", 3, 00, null, false, false);
+        MusicasAutorais PP = new MusicasAutorais("Propose", 3, 13, null, false, false);
+        MusicasAutorais TY = new MusicasAutorais("To. You", 3, 26, null, false, false);
+        ArrayList <MusicasAutorais> listaAFrU = new ArrayList<>();
         listaAFrU.add(IFU);
         listaAFrU.add(BV);
         listaAFrU.add(Demian);
