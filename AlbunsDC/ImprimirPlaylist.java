@@ -10,7 +10,8 @@ public class ImprimirPlaylist {
         if (todasPlaylists.isEmpty()){
             System.out.println("Você ainda não criou nenhuma playlist.");
         }
-        else System.out.println("A playlists criadas são: ");
+        else{
+            System.out.println("A playlists criadas são: ");
 
         //imprime o nome, duração e músicas de todas as playlists
         for (Playlist lista : todasPlaylists){
@@ -30,6 +31,7 @@ public class ImprimirPlaylist {
             System.out.println("\n-----------------------\n");
 
             contagem ++;
+        }
         }
     }
 }

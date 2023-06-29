@@ -7,6 +7,7 @@ public class CriarPlaylist {
     public static Playlist CriaPlaylist(Usuario user, Scanner scan){
         ArrayList <Album> ListaAlbum = AlbumRegistro.registrarAlbuns(); //Pega a lista de albuns a partir do arquivo "AlbumRegistro"
         Playlist favs = new Playlist();
+        scan.nextLine();
 
         System.out.print("Informe como você gostaria de nomear sua playlist: ");
         favs.setNome(scan.nextLine());
@@ -205,7 +206,6 @@ public class CriarPlaylist {
 
             if (numSong != 0){
                 contagem = 1;
-                
                 for (Musicas song : todasAsMusicas){
                     if (numSong == contagem){
                         Playlist.add(song);
@@ -215,6 +215,7 @@ public class CriarPlaylist {
                         break;
                     }
                     contagem ++;
+                    
                 }
             }
         }
@@ -224,7 +225,31 @@ public class CriarPlaylist {
 
         return favs;
     }
+    
+    public static ArrayList<Playlist> ApagaPlaylist(ArrayList <Playlist> todasPlaylists, Scanner scan){
 
+        if (todasPlaylists.isEmpty()){
+            System.out.println("Você não pode excluir playlist no momento porque você não possui nenhuma playlist criada.");
+        }
+        else{
+        ImprimirPlaylist.imprimePlaylist(todasPlaylists);
+
+        System.out.println("Informe qual playlist você deseja excluir:");
+        int apaga = scan.nextInt();
+        int contagem = 1;
+
+        for (Playlist fav : todasPlaylists){
+            if (apaga == contagem){
+                todasPlaylists.remove(fav);
+                break;
+            }
+            contagem ++;
+        }
+        System.out.println("A playlist foi excluída.\n");
+        }
+
+        return todasPlaylists;
+    }
 }
 
 

@@ -31,7 +31,7 @@ public class ImprimeMusica {
                 System.out.println("Não");
             }
         
-            System.out.println("-----------------------\n");
+            System.out.println("-----------------------\n\n");
 
             contagem ++;
     
@@ -39,8 +39,7 @@ public class ImprimeMusica {
 
         System.out.println("As músicas autorais foram imprimidas.\n");
         scan.nextLine();
-
-        Funcoes.limpaTela();
+        System.out.println("-----------------------\n\n\n");
 
         ArrayList<Cover> TodosCovers = CoverRegistro.registraCover();
 
@@ -52,11 +51,12 @@ public class ImprimeMusica {
             System.out.println("O cover possui " + cover.minutos + " minutos e " + cover.segundos + " segundos.");
             System.out.println("O cover foi feito por " + cover.integrantes);
             System.out.println("A música original é cantada por " + cover.cantorOriginal + "\n");
+            System.out.println("-----------------------\n\n");
 
             contagem ++;
         }
         
-        System.out.println("-----------------------\n");
+        
         System.out.println("Os covers foram imprimidos.\n");
 
         System.out.println("Todas as músicas foram imprimidas.");

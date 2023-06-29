@@ -58,7 +58,7 @@ public class ImprimeAlbum {
         ArrayList <Album> erasAlbums = umAlbum.AdicionaTrilogia(ListaAlbum);  //chama o método "AdicionaTrilogia" para descobrir quais álbuns fazem parte de uma Era ou Trilogia
         
         while (true){
-            System.out.println("Digite '1' para ver quais álbuns fazem parte de uma trilogia ou era \nCaso queira encerrar a visualização de albuns, clique em qualquer tecla.");
+            System.out.println("Digite '1' para ver quais álbuns fazem parte de uma trilogia ou era \nCaso queira encerrar a visualização de albuns, clique 0.");
             int opcao = scan.nextInt();
 
             if (opcao == 1){
@@ -94,7 +94,7 @@ public class ImprimeAlbum {
     }
 
     //imprime somente o nome de todos os albuns
-    public static void ImprimirAlbuns(ArrayList <Album> ListaAlbum){
+    public static void ImprimirAlbuns(ArrayList <Album> ListaAlbum, Scanner scan){
 
         int contagem = 1;
 
@@ -102,6 +102,33 @@ public class ImprimeAlbum {
             System.out.println(contagem + " - " + album.nome);
             contagem ++;
         }
+        System.out.println("Os albuns foram imprimidos");
+
+        scan.nextLine();        
 
     }
+
+     public static void diferencaTipoAlbum(){
+        ArrayList <Album> ListaAlbum = AlbumRegistro.registrarAlbuns();
+
+        boolean fullAlbumDescrito = false;
+        boolean miniAlbumDescrito = false;
+        boolean singleDescrito = false;
+
+        for (Album album : ListaAlbum) {
+            if (album instanceof FullAlbum && !fullAlbumDescrito) {
+                FullAlbum fullAlbum = (FullAlbum) album;
+                fullAlbum.descreveTipoAlbum();
+                fullAlbumDescrito = true;
+            } else if (album instanceof MiniAlbum && !miniAlbumDescrito) {
+                MiniAlbum miniAlbum = (MiniAlbum) album;
+                miniAlbum.descreveTipoAlbum();
+                miniAlbumDescrito = true;
+            } else if (album instanceof Single && !singleDescrito) {
+                Single single = (Single) album;
+                single.descreveTipoAlbum();
+                singleDescrito = true;
+            }
+        }
+    } 
 }

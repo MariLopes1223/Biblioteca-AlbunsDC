@@ -23,11 +23,14 @@ public abstract class Album implements TrilogiaOuEra, TocaIntro{
         this.faixas = faixas;
     }
 
+    public Album(){}
+
     public ArrayList <MusicasAutorais> getFaixas(){
         return this.faixas;
     }
 
-    @Override
+    public abstract void descreveTipoAlbum();
+
     public ArrayList<Album> AdicionaTrilogia(ArrayList <Album> ListaAlbum){
         ArrayList<Album> Trilogias = new ArrayList<>();
         for (Album album: ListaAlbum){

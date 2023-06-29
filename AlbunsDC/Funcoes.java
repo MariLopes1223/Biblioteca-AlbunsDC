@@ -21,6 +21,8 @@ public class Funcoes {
     System.out.println("4 - Criar uma playlist.");
     System.out.println("5 - Visualizar todas as playlists.");
     System.out.println("6 - Tocar a intro de um álbum.");
+    System.out.println("7 - Apagar uma playlist criada.");
+    System.out.println("8 - Diferença de Full Album, Mini Album e Single.");
     System.out.print("\nInforme a opção desejada para prosseguir: ");
     int opcao = scan.nextInt();
     System.out.println("-----------------------\n\n");

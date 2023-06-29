@@ -25,6 +25,13 @@ public class Main {
         System.out.print("Seu album preferido: ");
         user.setAlbumFav(scan.nextLine());
 
+        if (user.getNome().isEmpty()){
+            do {
+                System.out.println("É necessário fazer cadastro para continuar, por favor insira seu nome.");
+                user.setNome(scan.nextLine());
+            } while (user.getNome().isEmpty());
+        }
+
         System.out.println("\n");
         scan.nextLine();
 
@@ -37,13 +44,16 @@ public class Main {
             int opcao = Funcoes.exibirMenu(scan);
             
             if (opcao == 1){
-                ImprimeAlbum.ImprimirAlbuns(ListaAlbum); // imprime o nome de todos os albuns
+                ImprimeAlbum.ImprimirAlbuns(ListaAlbum, scan); // imprime o nome de todos os albuns
+                scan.nextLine();
+                Funcoes.limpaTela();
             }
             else if (opcao == 2){
                 ImprimeAlbum.ImprimirAlbuns(scan); //imprime todos os albuns
+                scan.nextLine();
+                Funcoes.limpaTela();
             }
             else if (opcao == 3){
-                System.out.println("\n");
                 ImprimeMusica.imprimirMusica(ListaAlbum, scan); //imprime todas as músicas
             }       
             else if (opcao == 4){
@@ -54,6 +64,12 @@ public class Main {
             }
             else if (opcao == 6){
                 TocaIntro.TocarIntro(ListaAlbum, scan); //toca intro escolhida pelo usuário
+            }
+            else if (opcao == 7){
+                todasPlaylists = CriarPlaylist.ApagaPlaylist(todasPlaylists, scan);
+            }
+            else if (opcao == 8){
+                ImprimeAlbum.diferencaTipoAlbum();
             }
             else {
                 System.out.println("Programa encerrado.");

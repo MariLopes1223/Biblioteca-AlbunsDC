@@ -30,6 +30,10 @@ public interface TocaIntro {
         String nomeIntro;
         contagem = 1;
 
+        if (escolhaAlbum > albumComIntro.size()){
+                System.out.println("O número inserido é inválido.");
+            }
+
         //encontra a intro e reproduz
         for (Album albumIntro : albumComIntro){
 
