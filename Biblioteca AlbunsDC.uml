@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>AlbunsDC</OriginalElement>
+  <nodes>
+    <node x="90.97321428571433" y="123.5">AlbunsDC.Musicas</node>
+    <node x="1170.0" y="488.0">AlbunsDC.ImprimeAlbum</node>
+    <node x="-100.0" y="262.0">AlbunsDC.Cover</node>
+    <node x="246.0" y="488.0">AlbunsDC.Usuario</node>
+    <node x="536.0" y="262.0">AlbunsDC.FullAlbum</node>
+    <node x="901.0" y="262.0">AlbunsDC.MiniAlbum</node>
+    <node x="901.0" y="89.0">AlbunsDC.Album</node>
+    <node x="-100.0" y="488.0">AlbunsDC.Playlist</node>
+    <node x="1269.0" y="262.0">AlbunsDC.Single</node>
+    <node x="311.5" y="836.0">AlbunsDC.Main</node>
+    <node x="771.2232142857143" y="366.0">AlbunsDC.AlbumRegistro</node>
+    <node x="-76.0" y="836.0">AlbunsDC.CriarPlaylist</node>
+    <node x="810.0" y="488.0">AlbunsDC.ImprimeMusica</node>
+    <node x="159.0" y="262.0">AlbunsDC.MusicasAutorais</node>
+    <node x="-94.0" y="366.0">AlbunsDC.CoverRegistro</node>
+    <node x="762.2232142857143" y="-15.0">AlbunsDC.TocaIntro</node>
+    <node x="-100.0" y="980.0">AlbunsDC.AllSongsDC</node>
+    <node x="1069.2232142857142" y="-15.0">AlbunsDC.TrilogiaOuEra</node>
+    <node x="336.0" y="980.0">AlbunsDC.ImprimirPlaylist</node>
+    <node x="575.0" y="488.0">AlbunsDC.Funcoes</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="AlbunsDC.Album" target="AlbunsDC.TocaIntro" relationship="REALIZATION">
+      <point x="0.0" y="-61.5" />
+      <point x="1075.0" y="64.0" />
+      <point x="905.7232142857143" y="64.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="AlbunsDC.Main" target="AlbunsDC.Usuario" relationship="CREATE">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="149.0" />
+    </edge>
+    <edge source="AlbunsDC.AlbumRegistro" target="AlbunsDC.FullAlbum" relationship="CREATE">
+      <point x="0.0" y="-38.5" />
+      <point x="891.7232142857143" y="341.0" />
+      <point x="708.5" y="341.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="AlbunsDC.MusicasAutorais" target="AlbunsDC.Musicas" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="337.5" y="237.0" />
+      <point x="178.47321428571433" y="237.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="AlbunsDC.Album" target="AlbunsDC.TrilogiaOuEra" relationship="REALIZATION">
+      <point x="0.0" y="-61.5" />
+      <point x="1075.0" y="64.0" />
+      <point x="1242.7232142857142" y="64.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="AlbunsDC.AlbumRegistro" target="AlbunsDC.MusicasAutorais" relationship="CREATE">
+      <point x="0.0" y="-38.5" />
+      <point x="891.7232142857143" y="341.0" />
+      <point x="337.5" y="341.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="AlbunsDC.FullAlbum" target="AlbunsDC.Album" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="708.5" y="237.0" />
+      <point x="1075.0" y="237.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="AlbunsDC.CoverRegistro" target="AlbunsDC.Cover" relationship="CREATE">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="AlbunsDC.MiniAlbum" target="AlbunsDC.Album" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="AlbunsDC.AlbumRegistro" target="AlbunsDC.Single" relationship="CREATE">
+      <point x="0.0" y="-38.5" />
+      <point x="891.7232142857143" y="341.0" />
+      <point x="1440.0" y="341.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="AlbunsDC.Single" target="AlbunsDC.Album" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="1440.0" y="237.0" />
+      <point x="1075.0" y="237.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="AlbunsDC.CriarPlaylist" target="AlbunsDC.Playlist" relationship="CREATE">
+      <point x="0.0" y="-49.5" />
+      <point x="0.0" y="149.0" />
+    </edge>
+    <edge source="AlbunsDC.AlbumRegistro" target="AlbunsDC.MiniAlbum" relationship="CREATE">
+      <point x="0.0" y="-38.5" />
+      <point x="891.7232142857143" y="341.0" />
+      <point x="1075.0" y="341.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="AlbunsDC.Cover" target="AlbunsDC.Musicas" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="19.5" y="237.0" />
+      <point x="178.47321428571433" y="237.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5961538461538461" showDependencies="true" x="765.5" y="531.3870967741935" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
